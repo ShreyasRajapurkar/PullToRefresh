@@ -13,6 +13,10 @@
 		B14A7A6F293B5A1A00EBFA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14A7A6D293B5A1A00EBFA81 /* Main.storyboard */; };
 		B14A7A71293B5A1B00EBFA81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14A7A70293B5A1B00EBFA81 /* Assets.xcassets */; };
 		B14A7A74293B5A1B00EBFA81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14A7A72293B5A1B00EBFA81 /* LaunchScreen.storyboard */; };
+		B14A7A7C293B5C9400EBFA81 /* PullToRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A7A7B293B5C9400EBFA81 /* PullToRefreshViewController.swift */; };
+		B14A7A7E293CF24D00EBFA81 /* PullToRefreshViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A7A7D293CF24D00EBFA81 /* PullToRefreshViewModel.swift */; };
+		B14A7A81293CFC3400EBFA81 /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A7A80293CFC3400EBFA81 /* NetworkingClient.swift */; };
+		B14A7A84293CFE6700EBFA81 /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A7A83293CFE6700EBFA81 /* Success.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B14A7A70293B5A1B00EBFA81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B14A7A73293B5A1B00EBFA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B14A7A75293B5A1B00EBFA81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B14A7A7B293B5C9400EBFA81 /* PullToRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshViewController.swift; sourceTree = "<group>"; };
+		B14A7A7D293CF24D00EBFA81 /* PullToRefreshViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshViewModel.swift; sourceTree = "<group>"; };
+		B14A7A80293CFC3400EBFA81 /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		B14A7A83293CFE6700EBFA81 /* Success.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Success.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		B14A7A5B293B5A1A00EBFA81 = {
 			isa = PBXGroup;
 			children = (
+				B14A7A7F293CFC2B00EBFA81 /* Networking */,
 				B14A7A66293B5A1A00EBFA81 /* PullToRefresh */,
 				B14A7A65293B5A1A00EBFA81 /* Products */,
 			);
@@ -56,6 +65,7 @@
 		B14A7A66293B5A1A00EBFA81 /* PullToRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				B14A7A82293CFE5D00EBFA81 /* Model */,
 				B14A7A67293B5A1A00EBFA81 /* AppDelegate.swift */,
 				B14A7A69293B5A1A00EBFA81 /* SceneDelegate.swift */,
 				B14A7A6B293B5A1A00EBFA81 /* ViewController.swift */,
@@ -63,8 +73,26 @@
 				B14A7A70293B5A1B00EBFA81 /* Assets.xcassets */,
 				B14A7A72293B5A1B00EBFA81 /* LaunchScreen.storyboard */,
 				B14A7A75293B5A1B00EBFA81 /* Info.plist */,
+				B14A7A7B293B5C9400EBFA81 /* PullToRefreshViewController.swift */,
+				B14A7A7D293CF24D00EBFA81 /* PullToRefreshViewModel.swift */,
 			);
 			path = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		B14A7A7F293CFC2B00EBFA81 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B14A7A80293CFC3400EBFA81 /* NetworkingClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B14A7A82293CFE5D00EBFA81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B14A7A83293CFE6700EBFA81 /* Success.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B14A7A7E293CF24D00EBFA81 /* PullToRefreshViewModel.swift in Sources */,
 				B14A7A6C293B5A1A00EBFA81 /* ViewController.swift in Sources */,
+				B14A7A84293CFE6700EBFA81 /* Success.swift in Sources */,
+				B14A7A81293CFC3400EBFA81 /* NetworkingClient.swift in Sources */,
 				B14A7A68293B5A1A00EBFA81 /* AppDelegate.swift in Sources */,
+				B14A7A7C293B5C9400EBFA81 /* PullToRefreshViewController.swift in Sources */,
 				B14A7A6A293B5A1A00EBFA81 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
